@@ -380,3 +380,34 @@ li p{
     text-align: center;
     margin-top: 50px;
 }
+
+/*page menu4*/
+
+.menu4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 80px 0;
+    font-family: 'Typo_Round_Regular', sans-serif;
+    font-size: 1.8em;
+}
+
+.menu4__title{
+    font-family: 'Arial Black', sans-serif;
+    font-size: 0.8em;
+}
+
+.menu4__head{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #F1F8E9;
+    box-shadow: 0 0 10px 0px #656565;
+    border-radius: 10px;
+    padding-bottom: 100px;
+}
+
+.menu4__head__title{
+    text-align: center;
+    margin-top: 50px;
+}
