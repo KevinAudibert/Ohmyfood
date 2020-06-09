@@ -2,28 +2,28 @@
   
 @font-face{
   font-family: 'cafeandbrewery';
-  src: url('cafeandbrewery.ttf');
+  src: url('police/cafeandbrewery.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face{
   font-family: 'GrandHotel';
-  src: url('GrandHotel.otf');
+  src: url('police/GrandHotel.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face{
     font-family: 'Typo_Round_Regular';
-    src: url('Typo_Round_Regular.otf');
+    src: url('police/Typo_Round_Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Findet Nemo';
-    src: url('Findet Nemo.ttf');
+    src: url('police/Findet Nemo.ttf');
     font-weight: normal;
     font-style: normal;
 }
