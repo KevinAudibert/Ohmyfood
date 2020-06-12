@@ -75,24 +75,6 @@
   }
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    translate: Y(0.3em);
-  }
-  100% {
-    translate: Y(-0.3em);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    translate: Y(0.3em);
-  }
-  100% {
-    translate: Y(-0.3em);
-  }
-}
-
 /*Reset*/
 html, body {
   margin: 0;
@@ -274,11 +256,6 @@ header h1 {
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 50px 50px 50px 50px;
-}
-
-.one {
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
 }
 
 footer {

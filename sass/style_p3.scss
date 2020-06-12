@@ -53,11 +53,6 @@ $text-color-site: #feca07;
 	100%{transform: rotate(0deg)}
 }
 
-@keyframes bounce{
-    0%{translate: Y(0.3em)}
-    100%{translate: Y(-0.3em)}
-}
-
 /*Reset*/
   
 html,body{
@@ -187,10 +182,6 @@ header{
       padding-bottom: 5px;
       border-radius: 50px 50px 50px 50px;
     }
-}
-
-.one{
-    animation: bounce 1s infinite ;
 }
 
 footer{
