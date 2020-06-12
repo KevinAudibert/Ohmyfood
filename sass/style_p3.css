@@ -29,6 +29,52 @@
 
 /*Variables*/
 /*Mixin*/
+/*animations*/
+@-webkit-keyframes vibration {
+  0% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  3% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  4% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  5% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes vibration {
+  0% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  3% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  4% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  5% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 /*Reset*/
 html, body {
   margin: 0;
@@ -84,9 +130,9 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 400px;
   height: 500px;
   text-align: center;
+  width: 400px;
   margin: 5%;
   -webkit-box-shadow: 0 0 10px 0px #656565;
           box-shadow: 0 0 10px 0px #656565;
@@ -173,7 +219,6 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 400px;
   height: 500px;
   text-align: center;
   text-decoration: none;
@@ -242,6 +287,11 @@ nav {
   font-size: 1.1em;
 }
 
+.mention {
+  -webkit-animation: vibration 1s infinite;
+          animation: vibration 1s infinite;
+}
+
 /*Page Menu 1*/
 header a {
   text-decoration: none;
@@ -303,6 +353,36 @@ header a {
   margin-bottom: 0;
   margin-top: 20px;
   font-size: 1.5em;
+}
+
+.head-title h3 {
+  position: relative;
+  margin: 0 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.head-title h3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
+.head-title h3:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
 }
 
 .menu1__head__title i {
