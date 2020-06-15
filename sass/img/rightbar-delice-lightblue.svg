@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="485.33334"
+   height="70.666664"
+   viewBox="0 0 485.33334 70.666664"
+   sodipodi:docname="rightbar-delice-lightblue.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="2.3997213"
+     inkscape:cx="242.66667"
+     inkscape:cy="35.333332"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g10">
+    <path
+       id="path8"
+       d="m 0.1648276,44.795089 c 0,-0.341786 1.0719691,-2.741786 2.3821524,-5.333333 L 4.9291323,34.749854 229.77706,34.726704 c 240.8012,-0.02479 235.54299,0.113733 249.43543,-6.571399 6.75016,-3.248229 7.12542,-2.525264 2.22208,4.281095 -4.85732,6.742483 -12.70551,10.203523 -26.53991,11.704066 C 443.38608,45.388737 0.1648276,46.026795 0.1648276,44.795089 Z"
+       style="fill:#229df9;fill-opacity:1;stroke-width:1.37286" />
+  </g>
+</svg>

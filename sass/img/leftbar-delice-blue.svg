@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="480"
+   height="66.666664"
+   viewBox="0 0 480 66.666664"
+   sodipodi:docname="leftbar-delice-blue.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="2.4263848"
+     inkscape:cx="240"
+     inkscape:cy="33.333332"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g10">
+    <path
+       id="path8"
+       d="M 27.647935,37.698841 C 16.119962,36.545255 7.9300252,33.00482 3.457832,27.241686 1.7167712,24.998051 0.2922669,22.907799 0.2922669,22.596682 c 0,-0.311117 3.9569564,1.014588 8.7932361,2.94601 l 8.793236,3.511678 228.725131,0.352869 228.72513,0.352868 2.33837,4.647132 2.33836,4.64713 -221.21507,-0.18104 C 137.12238,38.773756 33.108145,38.245237 27.647935,37.698841 Z"
+       style="fill:#0228dd;fill-opacity:1;stroke-width:1.36963" />
+  </g>
+</svg>

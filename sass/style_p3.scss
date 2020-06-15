@@ -22,8 +22,8 @@
 }
   
 @font-face{
-    font-family: 'Findet Nemo';
-    src: url('police/Findet Nemo.ttf');
+    font-family: 'DancingScript-Regular';
+    src: url('police/DancingScript-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,6 +32,11 @@
 
 $color-site: #579c87;
 $text-color-site: #feca07;
+$police-site: 'Arial Black', sans-serif;
+$police-enchante: 'GrandHotel', sans-serif;
+$police-chic: 'cafeandbrewery', sans-serif;
+$police-delice: 'DancingScript-Regular', sans-serif;
+$police-palette: 'Typo_Round_Regular', sans-serif;
 
 /*Mixin*/
 
@@ -41,6 +46,14 @@ $text-color-site: #feca07;
     justify-content: center;
     height: 500px;
     text-align: center;
+}
+
+@mixin menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 80px 0;
+    font-size: 1.8em;
 }
 
 /*animations*/
@@ -71,7 +84,7 @@ header{
     justify-content: center;
     background-color: $color-site;
         h1{
-            font-family: 'Arial Black', sans-serif;
+            font-family: $police-site;
             letter-spacing: -2px;
             color: $text-color-site;
             font-weight: bold;
@@ -97,8 +110,8 @@ header{
   
 .menu-enchante{
     background-color: #F3E5F5;
-    font-family: 'GrandHotel', sans-serif;
-    font-size: 1.5em;
+    font-family: $police-enchante;
+    font-size: 1.7em;
         p{
             font-size: 2.5em;
             margin: 0;  
@@ -113,8 +126,8 @@ header{
   
 .menu-chic{
     background-color: #fde6e8;
-    font-family: 'cafeandbrewery', sans-serif;
-    font-size: 1.5em;
+    font-family: $police-chic;
+    font-size: 1.7em;
     h2, p{
         background: linear-gradient(55deg, #d8852e 40%, #905bfd 55%);
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
@@ -128,8 +141,8 @@ header{
   
 .menu-delice{
     background-color: #E1F5FE;
-    font-family: 'Findet Nemo', sans-serif;
-    font-size: 1.3em;
+    font-family: $police-delice;
+    font-size: 1.5em;
     h2, p{
         background-image: linear-gradient(45deg, #0288D1 25%, #81D4FA 65%);
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
@@ -143,8 +156,8 @@ header{
   
 .menu-palette{
     background-color: #F1F8E9;
-    font-family: 'Typo_Round_Regular', sans-serif;
-    font-size: 1.3em;
+    font-family: $police-palette;
+    font-size: 1.8em;
     h2, p{
         background-image: linear-gradient(45deg, #43A047 25%, #81C784 65%);
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
@@ -160,10 +173,10 @@ header{
     @include create-menu();
     text-decoration: none;
     color: black;
-    transform: scale(1);
+    transform: scale(0.8);
     transition: transform 300ms ease-in-out;
         &:hover{
-        transform: scale(1.15); 
+        transform: scale(1); 
         }
 }
   
@@ -175,7 +188,7 @@ header{
     p{
       font-size: 1.3em;
       color: $text-color-site;
-      font-family: 'arial Black';
+      font-family: $police-site;
       background-color: $color-site;
       width: 250px;
       padding-top: 5px;
@@ -198,7 +211,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: 'arial Black';
+    font-family: $police-site;
     font-weight: lighter;
     color: $text-color-site;
     padding-left: 2%;
@@ -208,8 +221,12 @@ nav{
 
 .mention{
     animation: vibration 1s infinite;
+    a{
+        text-decoration: none;
+        color: $text-color-site;
+    }
 }
-  
+
 /*Page Menu 1*/
  
 header a{
@@ -217,14 +234,10 @@ header a{
     color: $text-color-site;
 }
 .menu1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0 80px 0;
+    @include menu();
     font-family: 'GrandHotel', sans-serif;
-    font-size: 1.8em;
 }
-  
+
 .head-title{
     display: flex;
     justify-content: space-between;
@@ -234,7 +247,7 @@ header a{
 }
   
 .menu1__title{
-    font-family: 'Arial Black', sans-serif;
+    font-family: $police-site;
     font-size: 0.8em;
     font-weight: normal;
 }
@@ -255,10 +268,8 @@ header a{
 .menu1__head__title i{
     font-size: 4em;
     background: linear-gradient(3deg, #ca283b 20%, #f78f6a 75%);
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-background-clip: text;
-    -moz-background-clip: text; 
 }
   
 .menu1__head__title{
@@ -268,11 +279,10 @@ header a{
  
 .head-title img{
     width: 25%;
-}
-
-.head-title h3{
-    width: 100%;
-    text-align: center;
+    h3{
+        width: 50%;
+        text-align: center;
+    }
 }
   
 article li{
@@ -280,23 +290,21 @@ article li{
     justify-content: space-between;
     align-items: baseline;
     padding-bottom: 20px;
+    h4{
+        font-weight: normal;
+        width: 80%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
-  
-article ul{
+
+ul{
     padding-left: 10%;
     padding-right: 10%;
-}
-  
-li h4{
-    font-weight: normal;
-    width: 80%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-  
-li p{
-   margin-top: 5px;
-   margin-bottom: 5px;
 }
 
 .menu1__resume3 li h4{
@@ -307,30 +315,23 @@ li p{
     display: flex;
     justify-content: center;
     height: 200px;
+    i{
+        padding-right: 10px;
+        background: linear-gradient(3deg, #ca283b 20%, #f78f6a 75%);
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        -webkit-background-clip: text;
+    }
 }
-  
-.footer i{
-    padding-right: 10px;
-    background: linear-gradient(3deg, #ca283b 20%, #f78f6a 75%);
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: text; 
-}
-  
+
 /*Page Menu2*/
 
 .menu2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0 80px 0;
-    font-size: 1.8em;
+    @include menu();
     font-family: 'cafeandbrewery', sans-serif;
 }
  
 .menu2__title{
-    font-family: 'Arial Black', sans-serif;
+    font-family: $police-site;
       font-size: 0.8em;
       font-weight: normal;
   }
@@ -348,10 +349,8 @@ li p{
   .menu2__head__title h2{
       font-size: 1.5em;
       background: linear-gradient(55deg, #d8852e 40%, #905bfd 55%);
-      -webkit-text-fill-color: transparent;
-      -moz-text-fill-color: transparent;
+      -webkit-text-fill-color: rgba(0, 0, 0, 0);
       -webkit-background-clip: text;
-      -moz-background-clip: text; 
   }
   
   .menu2__head__title{
@@ -374,20 +373,20 @@ li p{
   .menu2__resume3 li h4{
       width: 100%;
   }
+
+  .head-title h3{
+      text-align: center;
+  }
   
   /*Page menu3*/
   
   .menu3{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 0 80px 0;
-      font-family: 'Findet Nemo', sans-serif;
-      font-size: 1.8em;
+    @include menu();
+    font-family: $police-delice;
   }
   
   .menu3__title{
-      font-family: 'Arial Black', sans-serif;
+      font-family: $police-site;
       font-size: 0.8em;
       font-weight: normal;
   }
@@ -407,45 +406,51 @@ li p{
       font-size: 1.5em;
       margin-top: 50px;
       background-image: linear-gradient(45deg, #0288D1 25%, #81D4FA 65%);
-      -webkit-text-fill-color: transparent;
-      -moz-text-fill-color: transparent;
+      -webkit-text-fill-color: rgba(0, 0, 0, 0);
       -webkit-background-clip: text;
-      -moz-background-clip: text; 
   }
   
   /*page menu4*/
   
   .menu4{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 0 80px 0;
+    @include menu();
       font-family: 'Typo_Round_Regular', sans-serif;
-      font-size: 1.8em;
+      &__title{
+        font-family: $police-site;
+        font-size: 0.8em;
+      }
   }
-  
-  .menu4__title{
-      font-family: 'Arial Black', sans-serif;
-      font-size: 0.8em;
-  }
-  
+
   .menu4__head{
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      background-color: #F1F8E9;
-      box-shadow: 0 0 10px 0px #656565;
-      border-radius: 10px;
-      padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #F1F8E9;
+    box-shadow: 0 0 10px 0px #656565;
+    border-radius: 10px;
+    padding-bottom: 100px;
   }
-  
+
   .menu4__head__title h2{
       text-align: center;
       font-size: 1.5em;
       margin-top: 50px;
       background-image: linear-gradient(45deg, #43A047 25%, #81C784 65%);
-      -webkit-text-fill-color: transparent;
-      -moz-text-fill-color: transparent;
+      -webkit-text-fill-color: rgba(0, 0, 0, 0);
       -webkit-background-clip: text;
-      -moz-background-clip: text; 
   }
+
+/*Mentions Legales*/
+
+.general_mentions{
+    padding: 0 0 80px 0;
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
