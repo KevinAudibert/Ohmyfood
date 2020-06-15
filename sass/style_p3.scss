@@ -246,9 +246,9 @@ header a{
     padding-left: 10%;
 }
   
-.menu1__title{
+.menu__title{
     font-family: $police-site;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: normal;
 }
   
@@ -329,14 +329,8 @@ ul{
     @include menu();
     font-family: 'cafeandbrewery', sans-serif;
 }
- 
-.menu2__title{
-    font-family: $police-site;
-      font-size: 0.8em;
-      font-weight: normal;
-  }
-  
-  .menu2__head{
+   
+.menu2__head{
       display: flex;
       flex-direction: column;
       width: 80%;
@@ -344,19 +338,19 @@ ul{
       box-shadow: 0 0 10px 0px #656565;
       border-radius: 10px;
       padding-bottom: 100px;
-  }
+}
   
-  .menu2__head__title h2{
+.menu2__head__title h2{
       font-size: 1.5em;
       background: linear-gradient(55deg, #d8852e 40%, #905bfd 55%);
       -webkit-text-fill-color: rgba(0, 0, 0, 0);
       -webkit-background-clip: text;
-  }
+}
   
-  .menu2__head__title{
+.menu2__head__title{
       text-align: center;
       margin-top: 50px;
-  }
+}
   
   .menu2__resume1{
       color: #c67412;
@@ -383,12 +377,6 @@ ul{
   .menu3{
     @include menu();
     font-family: $police-delice;
-  }
-  
-  .menu3__title{
-      font-family: $police-site;
-      font-size: 0.8em;
-      font-weight: normal;
   }
   
   .menu3__head{
