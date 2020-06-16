@@ -37,6 +37,9 @@ $police-enchante: 'GrandHotel', sans-serif;
 $police-chic: 'cafeandbrewery', sans-serif;
 $police-delice: 'DancingScript-Regular', sans-serif;
 $police-palette: 'Typo_Round_Regular', sans-serif;
+$color-chic-one: #c67412;
+$color-chic-two: #A56799;
+$color-chic-three: #6E4CCC;
 
 /*Mixin*/
 
@@ -44,7 +47,7 @@ $police-palette: 'Typo_Round_Regular', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 500px;
+    height: 600px;
     text-align: center;
 }
 
@@ -54,6 +57,15 @@ $police-palette: 'Typo_Round_Regular', sans-serif;
     align-items: center;
     padding: 0 0 80px 0;
     font-size: 1.8em;
+}
+
+@mixin main-menu{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: #F3E5F5;
+    box-shadow: 0 0 10px 0px #656565;
+    border-radius: 10px;
 }
 
 /*animations*/
@@ -102,7 +114,7 @@ header{
   
 .menu-enchante, .menu-chic, .menu-delice, .menu-palette{
     @include create-menu();
-    width: 400px;
+    width: 500px;
     margin: 5%;
     box-shadow: 0 0 10px 0px #656565;
     border-radius: 10px;
@@ -242,8 +254,17 @@ header a{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    text-align: center;
     padding-right: 10%;
     padding-left: 10%;
+    h3{
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 1px, transparent 3px) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 300ms;
+        &:hover{
+            background-size: 100% 100%;
+        }
+    }
 }
   
 .menu__title{
@@ -253,34 +274,27 @@ header a{
 }
   
 .menu1__head{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    background-color: #F3E5F5;
-    box-shadow: 0 0 10px 0px #656565;
-    border-radius: 10px;
-}
-  
-.menu1__head__title h2{
-    font-size: 1.5em;
+    @include main-menu();
 }
 
-.menu1__head__title i{
-    font-size: 4em;
-    background: linear-gradient(3deg, #ca283b 20%, #f78f6a 75%);
-    -webkit-text-fill-color: rgba(0, 0, 0, 0);
-    -webkit-background-clip: text;
-}
-  
 .menu1__head__title{
     text-align: center;
     margin-top: 50px;
+    i{
+        font-size: 3em;
+        background: linear-gradient(3deg, #ca283b 20%, #f78f6a 75%);
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        -webkit-background-clip: text;
+    }
+    h2{
+        font-size: 1.2em;
+    }
 }
  
 .head-title img{
-    width: 25%;
+    width: 20%;
     h3{
-        width: 50%;
+        width: auto;
         text-align: center;
     }
 }
@@ -288,7 +302,7 @@ header a{
 article li{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     padding-bottom: 20px;
     h4{
         font-weight: normal;
@@ -331,13 +345,8 @@ ul{
 }
    
 .menu2__head{
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      background-color: #fde6e8;
-      box-shadow: 0 0 10px 0px #656565;
-      border-radius: 10px;
-      padding-bottom: 100px;
+    @include main-menu();
+    padding-bottom: 100px;
 }
   
 .menu2__head__title h2{
@@ -352,26 +361,22 @@ ul{
       margin-top: 50px;
 }
   
-  .menu2__resume1{
-      color: #c67412;
-  }
-  
-  .menu2__resume2{
-      color: #A56799;
-  }
-  
-  .menu2__resume3{
-      color: #6E4CCC;
-  }
-  
+.menu2{
+    &__resume1{
+        color: $color-chic-one;
+    }
+    &__resume2{
+        color: $color-chic-two;
+    }
+    &__resume3{
+        color: $color-chic-three;
+    }
+}
+
   .menu2__resume3 li h4{
       width: 100%;
   }
 
-  .head-title h3{
-      text-align: center;
-  }
-  
   /*Page menu3*/
   
   .menu3{
@@ -380,13 +385,8 @@ ul{
   }
   
   .menu3__head{
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      background-color: #E1F5FE;
-      box-shadow: 0 0 10px 0px #656565;
-      border-radius: 10px;
-      padding-bottom: 100px;
+    @include main-menu();
+    padding-bottom: 100px;
   }
   
   .menu3__head__title h2{
@@ -409,15 +409,10 @@ ul{
       }
   }
 
-  .menu4__head{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    background-color: #F1F8E9;
-    box-shadow: 0 0 10px 0px #656565;
-    border-radius: 10px;
+.menu4__head{
+    @include main-menu();
     padding-bottom: 100px;
-  }
+}
 
   .menu4__head__title h2{
       text-align: center;
