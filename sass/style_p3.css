@@ -491,12 +491,45 @@ ul {
   color: #c67412;
 }
 
+.menu2__resume1 h3 {
+  background: linear-gradient(to top, #c67412 0%, #c67412 1px, transparent 3px) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+}
+
+.menu2__resume1 h3:hover {
+  background-size: 100% 100%;
+}
+
 .menu2__resume2 {
   color: #A56799;
 }
 
+.menu2__resume2 h3 {
+  background: linear-gradient(to top, #A56799 0%, #A56799 1px, transparent 3px) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+}
+
+.menu2__resume2 h3:hover {
+  background-size: 100% 100%;
+}
+
 .menu2__resume3 {
   color: #6E4CCC;
+}
+
+.menu2__resume3 h3 {
+  background: linear-gradient(to top, #6E4CCC 0%, #6E4CCC 1px, transparent 3px) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+}
+
+.menu2__resume3 h3:hover {
+  background-size: 100% 100%;
 }
 
 .menu2__resume3 li h4 {

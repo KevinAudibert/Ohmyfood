@@ -364,12 +364,36 @@ ul{
 .menu2{
     &__resume1{
         color: $color-chic-one;
+        h3{
+            background: linear-gradient(to top, $color-chic-one 0%, $color-chic-one 1px, transparent 3px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover{
+                background-size: 100% 100%;
+            }            
+        }
     }
     &__resume2{
         color: $color-chic-two;
+        h3{
+            background: linear-gradient(to top, $color-chic-two 0%, $color-chic-two 1px, transparent 3px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover{
+                background-size: 100% 100%;
+            }
+        } 
     }
     &__resume3{
         color: $color-chic-three;
+        h3{
+            background: linear-gradient(to top, $color-chic-three 0%, $color-chic-three 1px, transparent 3px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover{
+                background-size: 100% 100%;
+            }
+        }
     }
 }
 
