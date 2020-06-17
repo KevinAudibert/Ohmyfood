@@ -78,6 +78,11 @@ $color-chic-three: #6E4CCC;
 	100%{transform: rotate(0deg)}
 }
 
+@keyframes bounce{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-10px);}
+}
+
 /*Reset*/
   
 html,body{
@@ -207,6 +212,23 @@ header{
       padding-bottom: 5px;
       border-radius: 50px 50px 50px 50px;
     }
+}
+
+.one{
+    display: inline-block;
+    animation: bounce 900ms ease-in-out infinite alternate;
+}
+
+.two{
+    display: inline-block;
+    animation: bounce 900ms ease-in-out infinite alternate;
+    animation-delay: 300ms;
+}
+
+.three{
+    display: inline-block;
+    animation: bounce 900ms ease-in-out infinite alternate;
+    animation-delay: 600ms;
 }
 
 footer{
