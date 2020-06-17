@@ -297,6 +297,9 @@ header a{
   
 .menu1__head{
     @include main-menu();
+    @media screen and (max-width: 450px){
+        font-size: x-large;
+    }
 }
 
 .menu1__head__title{
@@ -350,7 +353,7 @@ ul{
 .footer{
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 150px;
     i{
         padding-right: 10px;
         background: linear-gradient(3deg, #ca283b 20%, #f78f6a 75%);
@@ -369,6 +372,9 @@ ul{
 .menu2__head{
     @include main-menu();
     padding-bottom: 100px;
+    @media screen and (max-width: 450px){
+        font-size: x-large;
+    }
 }
   
 .menu2__head__title h2{
@@ -419,55 +425,58 @@ ul{
     }
 }
 
-  .menu2__resume3 li h4{
-      width: 100%;
-  }
+.menu2__resume3 li h4{
+    width: 100%;
+}
 
-  /*Page menu3*/
+/*Page menu3*/
   
-  .menu3{
+.menu3{
     @include menu();
     font-family: $police-delice;
-  }
+}
   
-  .menu3__head{
+.menu3__head{
     @include main-menu();
     padding-bottom: 100px;
-  }
+    @media screen and (max-width: 450px){
+        font-size: x-large;
+    }
+}
   
-  .menu3__head__title h2{
-      text-align: center;
-      font-size: 1.5em;
-      margin-top: 50px;
-      background-image: linear-gradient(45deg, #0288D1 25%, #81D4FA 65%);
-      -webkit-text-fill-color: rgba(0, 0, 0, 0);
-      -webkit-background-clip: text;
-  }
+.menu3__head__title h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 50px;
+    background-image: linear-gradient(45deg, #0288D1 25%, #81D4FA 65%);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-background-clip: text;
+}
   
-  /*page menu4*/
-  
-  .menu4{
+/*page menu4*/
+
+.menu4{
     @include menu();
-      font-family: 'Typo_Round_Regular', sans-serif;
-      &__title{
-        font-family: $police-site;
-        font-size: 0.8em;
-      }
-  }
+    font-family: 'Typo_Round_Regular', sans-serif;
+    &__title{
+      font-family: $police-site;
+      font-size: 0.8em;
+    }
+}
 
 .menu4__head{
     @include main-menu();
     padding-bottom: 100px;
 }
 
-  .menu4__head__title h2{
-      text-align: center;
-      font-size: 1.5em;
-      margin-top: 50px;
-      background-image: linear-gradient(45deg, #43A047 25%, #81C784 65%);
-      -webkit-text-fill-color: rgba(0, 0, 0, 0);
-      -webkit-background-clip: text;
-  }
+.menu4__head__title h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 50px;
+    background-image: linear-gradient(45deg, #43A047 25%, #81C784 65%);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-background-clip: text;
+}
 
 /*Mentions Legales*/
 
