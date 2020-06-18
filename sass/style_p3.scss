@@ -55,21 +55,31 @@ $color-chic-three: #6E4CCC;
     text-align: center;
 }
 
-@mixin menu{
+@mixin menu($police){
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 0 80px 0;
     font-size: 1.8em;
+    font-family: $police;
 }
 
-@mixin main-menu{
+@mixin main-menu($color){
     display: flex;
     flex-direction: column;
     width: 90%;
-    background-color: #F3E5F5;
+    background-color: $color;
     box-shadow: 0 0 10px 0px #656565;
     border-radius: 10px;
+}
+
+@mixin underline-color($color-line){
+    background: linear-gradient(to top, $color-line 0%, $color-line 1px, transparent 3px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;
+    }
 }
 
 /*animations*/
@@ -272,8 +282,7 @@ header a{
     color: $text-color-site;
 }
 .menu1{
-    @include menu();
-    font-family: 'GrandHotel', sans-serif;
+    @include menu($police-enchante);
 }
 
 .head-title{
@@ -284,12 +293,7 @@ header a{
     padding-right: 10%;
     padding-left: 10%;
     h3{
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 1px, transparent 3px) no-repeat;
-        background-size: 0 100%;
-        transition: background-size 300ms;
-        &:hover{
-            background-size: 100% 100%;
-        }
+        @include underline-color(black);
     }
 }
   
@@ -300,7 +304,7 @@ header a{
 }
   
 .menu1__head{
-    @include main-menu();
+    @include main-menu($color-menu-enchante);
     @media screen and (max-width: 450px){
         font-size: x-large;
     }
@@ -369,12 +373,11 @@ ul{
 /*Page Menu2*/
 
 .menu2{
-    @include menu();
-    font-family: 'cafeandbrewery', sans-serif;
+    @include menu($police-chic);
 }
    
 .menu2__head{
-    @include main-menu();
+    @include main-menu($color-menu-chic);
     padding-bottom: 100px;
     @media screen and (max-width: 450px){
         font-size: x-large;
@@ -397,34 +400,19 @@ ul{
     &__resume1{
         color: $color-chic-one;
         h3{
-            background: linear-gradient(to top, $color-chic-one 0%, $color-chic-one 1px, transparent 3px) no-repeat;
-            background-size: 0 100%;
-            transition: background-size 300ms;
-            &:hover{
-                background-size: 100% 100%;
-            }            
+            @include underline-color($color-chic-one);
         }
     }
     &__resume2{
         color: $color-chic-two;
         h3{
-            background: linear-gradient(to top, $color-chic-two 0%, $color-chic-two 1px, transparent 3px) no-repeat;
-            background-size: 0 100%;
-            transition: background-size 300ms;
-            &:hover{
-                background-size: 100% 100%;
-            }
+            @include underline-color($color-chic-two);
         } 
     }
     &__resume3{
         color: $color-chic-three;
         h3{
-            background: linear-gradient(to top, $color-chic-three 0%, $color-chic-three 1px, transparent 3px) no-repeat;
-            background-size: 0 100%;
-            transition: background-size 300ms;
-            &:hover{
-                background-size: 100% 100%;
-            }
+            @include underline-color($color-chic-three);
         }
     }
 }
@@ -436,12 +424,11 @@ ul{
 /*Page menu3*/
   
 .menu3{
-    @include menu();
-    font-family: $police-delice;
+    @include menu($police-delice);
 }
   
 .menu3__head{
-    @include main-menu();
+    @include main-menu($color-menu-delice);
     padding-bottom: 100px;
     @media screen and (max-width: 450px){
         font-size: x-large;
@@ -460,8 +447,7 @@ ul{
 /*page menu4*/
 
 .menu4{
-    @include menu();
-    font-family: 'Typo_Round_Regular', sans-serif;
+    @include menu($police-palette);
     &__title{
       font-family: $police-site;
       font-size: 0.8em;
@@ -469,7 +455,7 @@ ul{
 }
 
 .menu4__head{
-    @include main-menu();
+    @include main-menu($color-menu-palette);
     padding-bottom: 100px;
 }
 
@@ -495,4 +481,3 @@ ul{
         padding-right: 10%;
     }
 }
-
