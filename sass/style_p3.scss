@@ -337,15 +337,25 @@ article li{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
+    @media screen and (max-width: 450px){
+        flex-wrap: wrap;
+        text-align: center;
+    }
     h4{
         font-weight: normal;
         width: 80%;
         margin-top: 5px;
         margin-bottom: 5px;
+    @media screen and (max-width: 450px){
+        width: 100%;
+        }
     }
     p{
         margin-top: 5px;
         margin-bottom: 5px;
+    @media screen and (max-width: 450px){
+        width: 100%;
+        }
     }
 }
 

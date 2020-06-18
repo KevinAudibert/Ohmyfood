@@ -454,6 +454,14 @@ article li {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 450px) {
+  article li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
 article li h4 {
   font-weight: normal;
   width: 80%;
@@ -461,9 +469,21 @@ article li h4 {
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 450px) {
+  article li h4 {
+    width: 100%;
+  }
+}
+
 article li p {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 450px) {
+  article li p {
+    width: 100%;
+  }
 }
 
 ul {
