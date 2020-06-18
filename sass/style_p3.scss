@@ -393,17 +393,16 @@ ul{
         font-size: x-large;
     }
 }
-  
-.menu2__head__title h2{
+
+.menu2__head__title{
+    text-align: center;
+    margin-top: 50px;
+    h2{
       font-size: 1.5em;
       background: linear-gradient(55deg, #d8852e 40%, #905bfd 55%);
       -webkit-text-fill-color: rgba(0, 0, 0, 0);
-      -webkit-background-clip: text;
-}
-  
-.menu2__head__title{
-      text-align: center;
-      margin-top: 50px;
+      -webkit-background-clip: text;         
+    }
 }
   
 .menu2{
@@ -443,15 +442,14 @@ ul{
     @media screen and (max-width: 450px){
         font-size: x-large;
     }
-}
-  
-.menu3__head__title h2{
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 50px;
-    background-image: linear-gradient(45deg, #0288D1 25%, #81D4FA 65%);
-    -webkit-text-fill-color: rgba(0, 0, 0, 0);
-    -webkit-background-clip: text;
+    &__title h2{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 50px;
+        background-image: linear-gradient(45deg, #0288D1 25%, #81D4FA 65%);
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        -webkit-background-clip: text;
+    }
 }
   
 /*page menu4*/
@@ -467,21 +465,22 @@ ul{
 .menu4__head{
     @include main-menu($color-menu-palette);
     padding-bottom: 100px;
-}
-
-.menu4__head__title h2{
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 50px;
-    background-image: linear-gradient(45deg, #43A047 25%, #81C784 65%);
-    -webkit-text-fill-color: rgba(0, 0, 0, 0);
-    -webkit-background-clip: text;
+    &__title h2{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 50px;
+        background-image: linear-gradient(45deg, #43A047 25%, #81C784 65%);
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        -webkit-background-clip: text;
+    }
 }
 
 /*Mentions Legales*/
 
 .general_mentions{
     padding: 0 0 80px 0;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
     section{
         display: flex;
         flex-direction: column;
