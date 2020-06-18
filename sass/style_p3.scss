@@ -34,9 +34,13 @@ $color-site: #579c87;
 $text-color-site: #feca07;
 $police-site: 'Arial Black', sans-serif;
 $police-enchante: 'GrandHotel', sans-serif;
+$color-menu-enchante: #F3E5F5;
 $police-chic: 'cafeandbrewery', sans-serif;
+$color-menu-chic: #fde6e8;
 $police-delice: 'DancingScript-Regular', sans-serif;
+$color-menu-delice: #E1F5FE;
 $police-palette: 'Typo_Round_Regular', sans-serif;
+$color-menu-palette: #F1F8E9;
 $color-chic-one: #c67412;
 $color-chic-two: #A56799;
 $color-chic-three: #6E4CCC;
@@ -126,7 +130,7 @@ header{
 }
   
 .menu-enchante{
-    background-color: #F3E5F5;
+    background-color: $color-menu-enchante;
     font-family: $police-enchante;
     font-size: 1.7em;
         p{
@@ -142,7 +146,7 @@ header{
 }
   
 .menu-chic{
-    background-color: #fde6e8;
+    background-color: $color-menu-chic;
     font-family: $police-chic;
     font-size: 1.7em;
     h2, p{
@@ -157,7 +161,7 @@ header{
 }
   
 .menu-delice{
-    background-color: #E1F5FE;
+    background-color: $color-menu-delice;
     font-family: $police-delice;
     font-size: 1.5em;
     h2, p{
@@ -172,7 +176,7 @@ header{
 }
   
 .menu-palette{
-    background-color: #F1F8E9;
+    background-color: $color-menu-palette;
     font-family: $police-palette;
     font-size: 1.8em;
     h2, p{
