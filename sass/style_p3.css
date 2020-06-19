@@ -262,6 +262,7 @@ header h1 {
 .menu_zoom:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
+  opacity: 0.5;
 }
 
 #next {

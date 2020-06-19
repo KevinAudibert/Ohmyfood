@@ -210,7 +210,8 @@ header{
     transform: scale(0.8);
     transition: transform 300ms ease-in-out;
         &:hover{
-        transform: scale(1); 
+        transform: scale(1);
+        opacity: 0.5;
         }
 }
   
