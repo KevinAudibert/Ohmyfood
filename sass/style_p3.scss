@@ -137,6 +137,9 @@ header{
     margin: 5%;
     box-shadow: 0 0 10px 0px #656565;
     border-radius: 10px;
+    @media screen and (max-width: 450px){
+        height: 400px;
+    }
 }
   
 .menu-enchante{
@@ -464,7 +467,10 @@ ul{
 
 .menu4__head{
     @include main-menu($color-menu-palette);
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    @media screen and (max-width: 450px){
+        font-size: large;
+    }
     &__title h2{
         text-align: center;
         font-size: 1.5em;
