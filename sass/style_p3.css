@@ -418,7 +418,7 @@ header a {
 
 @media screen and (max-width: 450px) {
   .menu1__head {
-    font-size: x-large;
+    font-size: large;
   }
 }
 
@@ -553,7 +553,7 @@ ul {
 
 @media screen and (max-width: 450px) {
   .menu2__head {
-    font-size: x-large;
+    font-size: large;
   }
 }
 
@@ -653,7 +653,7 @@ ul {
 
 @media screen and (max-width: 450px) {
   .menu3__head {
-    font-size: x-large;
+    font-size: large;
   }
 }
 
