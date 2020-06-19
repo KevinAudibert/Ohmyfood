@@ -176,7 +176,7 @@ header{
 .menu-delice{
     background-color: $color-menu-delice;
     font-family: $police-delice;
-    font-size: 1.5em;
+    font-size: 2em;
     h2, p{
         background-image: linear-gradient(45deg, #0288D1 25%, #81D4FA 65%);
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
@@ -448,7 +448,7 @@ ul{
     }
     &__title h2{
         text-align: center;
-        font-size: 1.5em;
+        font-size: 2em;
         margin-top: 50px;
         background-image: linear-gradient(45deg, #0288D1 25%, #81D4FA 65%);
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
